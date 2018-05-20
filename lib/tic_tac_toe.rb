@@ -50,7 +50,7 @@ class TicTacToe
     token = current_player(@board)
 
     if valid_move?(index)
-      moveindex, token)
+      move(index, token)
       display_board
     else turn
     end
