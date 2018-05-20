@@ -43,4 +43,17 @@ class TicTacToe
     true if position_taken?(index) == false && index.between?(0, 8)
   end
 
+  def turn
+    puts 'Please enter 1-9:'
+    input = gets.strip
+    index = input_to_index(input)
+    token = current_player(@board)
+
+    if valid_move?(index)
+      moveindex, token)
+      display_board
+    else turn
+    end
+  end
+
 end
