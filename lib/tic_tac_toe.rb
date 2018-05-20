@@ -105,4 +105,10 @@ class TicTacToe
     true if won? || draw? || full?
   end
 
+  def winner
+    if winning = won?
+      @board[winning[0]]
+    end
+  end
+
 end
